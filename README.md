@@ -218,7 +218,7 @@ resultat
 ```javascript
 "je-suis-un-boy"
 ```
-### II-5 la fonction `trim()` `map` `join` `split` etc 
+### II-5 la fonction `trim()`,  `map`, `join` ,`split` etc 
 ```javascript
 function capitalise2 (mot){
    const  mots = mot.trim().toLowerCase().split(" ") // permet de supprimer les espaces avant et apres la chaine de caractere
