@@ -24,6 +24,10 @@ resultat
 ```javascript
 [ true, true, false, true, false, true ]
 ```
+--- 
+--- 
+---
+
 ### exemple de fonction 
 
 ```javascript
@@ -46,6 +50,10 @@ resultat
 ```
 
 ici la fonction `map`pemet de donner `l'index` et la `valeur` de chaque element dans le tableau pour plus d'information sur la fonction primitive `map ` 
+
+---
+---
+---
 
 ###  I- 2  la fonction `filter`
 
@@ -72,6 +80,9 @@ resultat
 ici la fonction renvoie uniquement les valeurs > 0 et n'a pas la meme taille qu'au debut
 
 pour plus d'information rendez-vous sur la page mdn sur les fonctions en js 
+---
+---
+---
 
 ### I.3 la fonction `som`
 
@@ -92,12 +103,14 @@ resultat
 ```javascript
 [ 2, 4, 0, 9 ]
 ```
-
+---
+---
+---
 
 ### I- 4  exemple de fonction experimentés avec map filter et somme
 
- #### I-4-1  filtrer les produits en stock quels produits ont un stock > 0
-  [{ nom : "A" , stock: "5"} , {nom : "B" , stock : 0}] ( guide)
+ ### I-4-1  filtrer les produits en stock quels produits ont un stock > 0
+ ` [{ nom : "A" , stock: "5"} , {nom : "B" , stock : 0}] ( guide)`
 ```javascript
 function filtrage(stock){
          return stock.filter(function(produit){
@@ -112,9 +125,13 @@ resultat
 ```javascript
 [ { nom: 'A', stock: '5' }, { nom: 'C', stock: 3 } ]
 ```
+---
+---
+---
+
 
 #### I-4-2 prix doubles 
- un magasin double ses prix [500 , 800 , 1200]
+ un magasin double ses prix `[500 , 800 , 1200]`
  ```javascript
 function prixDouble(prix){
   return prix.map(function(p){
@@ -127,7 +144,7 @@ resultat
 ```javascript
 [ 1000, 1600, 2400 ]
 ```
-#### I-4-3 trouver les produits dans les 02 listes ["A" , "B" , "C" , "D"] [["B" , "C" , "D" , "E"]](guide )
+### I-4-3 trouver les produits dans les 02 listes `["A" , "B" , "C" , "D"] [["B" , "C" , "D" , "E"]](guide )`
 ```javascript
 function produitsCommuns(tab1, tab2) {
   return tab1.filter(function(produit1) {
@@ -145,7 +162,7 @@ resultat
 ```javascript
 [ { id: 2, nom: 'B' }, { id: 3, nom: 'C' }, { id: 4, nom: 'D' } ]
 ```
-#### I-4-5 & I-4-6 a **completer**
+### I-4-5 & I-4-6 a **completer**
 
 
 
@@ -166,6 +183,10 @@ resultat
 ```javascript
 " le chien dort"
 ```
+---
+---
+---
+
 
 ### II.2 la fonction `slice` et `repeat`
 
@@ -188,6 +209,9 @@ resultat
 ```javascript
 658*****54
 ```
+---
+---
+---
 ### II - 3  la fonction `match`
  analyser "hellow123!@"(compter les lettres , chiffres , et symboles)
 ```javascript
@@ -205,6 +229,9 @@ lettre 5
 chiffre 3
 symbole 2
 ```
+---
+---
+---
 ###  II- 4 la fonction `slugify` & `toLowerCase()`
   convertir ( "je suis un boy' ) en (je-suis-un-boy )guide
 
@@ -218,6 +245,9 @@ resultat
 ```javascript
 "je-suis-un-boy"
 ```
+---
+---
+---
 ### II-5 la fonction `trim()`,  `map`, `join` ,`split` etc 
 ```javascript
 function capitalise2 (mot){
