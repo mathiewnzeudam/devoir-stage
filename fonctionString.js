@@ -19,7 +19,7 @@ function masquerNumero(numero) {
     let resultat = debut + etoiles + fin;
     return resultat;
 }
-console.log( masquerNumero("658954") );
+console.log( masquerNumero("6589654754") );
 
 
 

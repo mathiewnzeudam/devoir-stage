@@ -145,12 +145,14 @@ resultat
 ```javascript
 [ { id: 2, nom: 'B' }, { id: 3, nom: 'C' }, { id: 4, nom: 'D' } ]
 ```
-#### I-4-5 & I-4-6 a completer
+#### I-4-5 & I-4-6 a **completer**
 
-## 2 les chaines de" caracteres 
+
+
+## II les chaines de" caracteres 
 ici nous avons decouvert les fonctions sur les chaines de caractere a savoir `replace` , `repeat` , `slice` , `spide` , `toLowerCase` , `toUpperCase` , `supplslugify` , `match` etc 
  ici nous allons illustrés quelques fonctions pour en savoir plus sur d'autre fonction veillez cliquer sur ce lien
-### 2.1  la fonction `replace`
+### II.1  la fonction `replace`
 ici, la fonction replace permet de remplacer une lettre un mot une phrase et un paragraphe etc ce qui est iilustre de la  facon suivante 
 
 ```javascript
@@ -165,5 +167,78 @@ resultat
 " le chien dort"
 ```
 
-### 2.2 la fonction `ToLowerCase()`
+### II.2 la fonction `slice` et `repeat`
 
+fonction masquer un numero
+ 123343524344  en  123xxxxxxxxxxx44
+
+ ```javascript
+function masquerNumero(numero) {
+    
+    let debut = numero.slice(0 , 3);
+    let fin = numero.slice(-2);
+    let etoiles = "*".repeat(numero.length - 5);
+    let resultat = debut + etoiles + fin;
+    return resultat;
+}
+console.log( masquerNumero("6589654754") );
+
+```
+resultat
+```javascript
+658*****54
+```
+### II - 3  la fonction `match`
+ analyser "hellow123!@"(compter les lettres , chiffres , et symboles)
+```javascript
+let texte = "hello123@!"
+let lettre =( texte.match(/[a-z, A-Z]/g) || []).length;
+let chiffre = (texte.match(/[0-9]/g) || []).length
+let symbole = texte.length-lettre-chiffre; 
+console.log("lettre", lettre);
+console.log("chiffre", chiffre);
+console.log("symbole", symbole);
+```
+resultat 
+```javascript
+lettre 5
+chiffre 3
+symbole 2
+```
+###  II- 4 la fonction `slugify` & `toLowerCase()`
+  convertir ( "je suis un boy' ) en (je-suis-un-boy )guide
+
+```javascript
+function slugify(titre){
+    return titre.toLowerCase().replace(/\s+/g, '-')
+}
+console.log(slugify("Je SUIS un boy"));
+```
+resultat 
+```javascript
+"je-suis-un-boy"
+```
+### II-5 la fonction `trim()` `map` `join` `split` etc 
+```javascript
+function capitalise2 (mot){
+   const  mots = mot.trim().toLowerCase().split(" ") // permet de supprimer les espaces avant et apres la chaine de caractere
+   // et permet de mettre tout le texte en minuscule pour un premier temps et de separer les mots d'une chaine de caractere et de les mettre dans un tableau*
+   
+   const motCapitalise = mots.map(function(mot){ // map permet de parcourir le tableau et affiche les valeurs dans un autre tableau
+    if(typeof mot !=="string"){ // permet de verifier si la valeur est une chaine de caractere ou pas
+        return "ce n'est pas une chaine de caractere" // permet de retourner un message d'erreur si la valeur n'est pas une chaine de caractere
+    }else if (mot === ""){ // permet de verifier si la valeur est une chaine de caractere vide ou pas
+        return "entrer une chaine de caractere non vide" // permet de retourner un message d'erreur si la valeur est une chaine de caractere vide
+    }else{ // permet de mettre la premiere lettre de chaque mot en majuscule et le reste en minuscule
+        return mot.at(0).toUpperCase() + mot.slice(1)// permet de mettre la premiere lettre de chaque mot en majuscule et le reste en minuscule
+    }
+})
+   return motCapitalise.join(" ") // permet de joindre les mots du tableau en une chaine de caractere avec un espace entre chaque mot
+}
+console.log(capitalise2("morgan COMMENT tu vas "));
+```
+resultat 
+```javascript
+"Morgan Comment Tu Vas "
+```
+pour plus d'information concernant  fonctions sur les chaines de caractere cliquer ici https://github.com/IT-WIBRC/web-bases/blob/master/javascript/strings/index.html
