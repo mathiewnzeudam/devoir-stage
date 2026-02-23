@@ -166,7 +166,7 @@ resultat
 
 
 
-## II les chaines de" caracteres 
+## II les chaines de caracteres 
 ici nous avons decouvert les fonctions sur les chaines de caractere a savoir `replace` , `repeat` , `slice` , `spide` , `toLowerCase` , `toUpperCase` , `supplslugify` , `match` etc 
  ici nous allons illustrés quelques fonctions pour en savoir plus sur d'autre fonction veillez cliquer sur ce lien
 ### II.1  la fonction `replace`
@@ -191,7 +191,7 @@ resultat
 ### II.2 la fonction `slice` et `repeat`
 
 fonction masquer un numero
- 123343524344  en  123xxxxxxxxxxx44
+ 123343524344  en  123`xxxxxxxxxxx`44
 
  ```javascript
 function masquerNumero(numero) {
@@ -213,7 +213,7 @@ resultat
 ---
 ---
 ### II - 3  la fonction `match`
- analyser "hellow123!@"(compter les lettres , chiffres , et symboles)
+ analyser "hellow123!@"(compter les `lettres` , `chiffres` , et `symboles`)
 ```javascript
 let texte = "hello123@!"
 let lettre =( texte.match(/[a-z, A-Z]/g) || []).length;
@@ -233,7 +233,7 @@ symbole 2
 ---
 ---
 ###  II- 4 la fonction `slugify` & `toLowerCase()`
-  convertir ( "je suis un boy' ) en (je-suis-un-boy )guide
+  convertir `( "je suis un boy' ) en (je-suis-un-boy ) `guide
 
 ```javascript
 function slugify(titre){
