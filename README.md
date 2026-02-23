@@ -84,7 +84,7 @@ ici la fonction renvoie uniquement les valeurs > 0 et n'a pas la meme taille qu'
 ---
 ---
 
-### I.3 la fonction `som`
+### I.3 la fonction `some`
 
 ici la fonction filter permet de comparer et renvoyer 02 ou plusieurs element elle retourne egalement un booleen 
 
