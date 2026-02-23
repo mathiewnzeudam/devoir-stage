@@ -3,7 +3,7 @@
 ## I-  les fonctions sur les **tableaux**
 
 ici nous avons decouvert des fonctions primitives 
-des **tableaux** a savoir `map` , `filter` , `som`  ici je  vais vous montrer en detail comment fonctione chaque fonctions 
+des **tableaux** a savoir `map` , `filter` , `some`  ici je  vais vous montrer en detail comment fonctione chaque fonctions 
 
 
 
@@ -107,7 +107,7 @@ resultat
 ---
 ---
 
-### I- 4  exemple de fonction experimentés avec map filter et somme
+### I- 4  exemple de fonction experimentés avec `map` `filter` et `some`
 
  ### I-4-1  filtrer les produits en stock quels produits ont un stock > 0
  ` [{ nom : "A" , stock: "5"} , {nom : "B" , stock : 0}] ( guide)`
@@ -144,7 +144,7 @@ resultat
 ```javascript
 [ 1000, 1600, 2400 ]
 ```
-### I-4-3 trouver les produits dans les 02 listes `["A" , "B" , "C" , "D"] [["B" , "C" , "D" , "E"]](guide )`
+### I-4-3 trouver les produits dans les 02 listes `["A" , "B" , "C" , "D"]` `["B" , "C" , "D" , "E"](guide )`
 ```javascript
 function produitsCommuns(tab1, tab2) {
   return tab1.filter(function(produit1) {
@@ -191,7 +191,7 @@ resultat
 ### II.2 la fonction `slice` et `repeat`
 
 fonction masquer un numero
- 123343524344  en  123`xxxxxxxxxxx`44
+ `123343524344`  en  `123xxxxxxxxxxx44`
 
  ```javascript
 function masquerNumero(numero) {
@@ -213,7 +213,7 @@ resultat
 ---
 ---
 ### II - 3  la fonction `match`
- analyser "hellow123!@"(compter les `lettres` , `chiffres` , et `symboles`)
+ analyser `"hellow123!@"` (compter les `lettres` , `chiffres` , et `symboles`)
 ```javascript
 let texte = "hello123@!"
 let lettre =( texte.match(/[a-z, A-Z]/g) || []).length;
@@ -233,7 +233,7 @@ symbole 2
 ---
 ---
 ###  II- 4 la fonction `slugify` & `toLowerCase()`
-  convertir `( "je suis un boy' ) en (je-suis-un-boy ) `guide
+  convertir `( "je suis un boy' )` en `(je-suis-un-boy ) `guide
 
 ```javascript
 function slugify(titre){
