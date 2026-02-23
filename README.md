@@ -79,7 +79,7 @@ resultat
 ```
 ici la fonction renvoie uniquement les valeurs > 0 et n'a pas la meme taille qu'au debut
 
-pour plus d'information rendez-vous sur la page mdn sur les fonctions en js 
+###### pour plus d'information rendez-vous sur la page mdn sur les fonctions en js 
 ---
 ---
 ---
